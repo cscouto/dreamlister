@@ -22,6 +22,7 @@
 		04F6B4A51E2AB2F300406AAD /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B49D1E2AB2F300406AAD /* ItemType+CoreDataClass.swift */; };
 		04F6B4A61E2AB2F300406AAD /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B49E1E2AB2F300406AAD /* ItemType+CoreDataProperties.swift */; };
 		04F6B4AB1E2ABA8700406AAD /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B4AA1E2ABA8700406AAD /* MaterialView.swift */; };
+		04F6B4AF1E2EF33B00406AAD /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B4AE1E2EF33B00406AAD /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		04F6B49D1E2AB2F300406AAD /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		04F6B49E1E2AB2F300406AAD /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04F6B4AA1E2ABA8700406AAD /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		04F6B4AE1E2EF33B00406AAD /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				04F6B4AA1E2ABA8700406AAD /* MaterialView.swift */,
+				04F6B4AE1E2EF33B00406AAD /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F6B4AF1E2EF33B00406AAD /* ItemCell.swift in Sources */,
 				04F6B4A41E2AB2F300406AAD /* Image+CoreDataProperties.swift in Sources */,
 				04F6B4851E2AAEE500406AAD /* MainVC.swift in Sources */,
 				04F6B4A51E2AB2F300406AAD /* ItemType+CoreDataClass.swift in Sources */,
@@ -363,6 +367,7 @@
 				04F6B4961E2AAEE500406AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
