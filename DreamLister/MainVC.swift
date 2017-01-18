@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var segment: UISegmentedControl!
+    
+    var controller: NSFetchedResultsController<Item>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,5 +35,25 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 0
     }
+    
+    func attemptFetch(){
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        let dateSort = NSSortDescriptor(key: "created", ascending: false)
+        fetchRequest.sortDescriptors = [dateSort]
+        
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        do{
+            try controller.performFetch()
+        }catch{
+            //let error = error as NSError
+        }
+    }
+    
+    func controllerWillChangeContent (_ controller: NSFetchedResultsController<NSFetchRequestResult>){
+        tableView.beginUpdates()
+    }
+    
+    
 }
 
