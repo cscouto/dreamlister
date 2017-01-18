@@ -15,7 +15,8 @@
 		04F6B4901E2AAEE500406AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6B48E1E2AAEE500406AAD /* LaunchScreen.storyboard */; };
 		04F6B4AB1E2ABA8700406AAD /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B4AA1E2ABA8700406AAD /* MaterialView.swift */; };
 		04F6B4AF1E2EF33B00406AAD /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B4AE1E2EF33B00406AAD /* ItemCell.swift */; };
-		8C058EC01E2FC432001B36A4 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C058EBF1E2FC432001B36A4 /* ItemDetailsVC.swift */; };
+		8C058EC21E2FCCFD001B36A4 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C058EC11E2FCCFD001B36A4 /* ItemDetailsVC.swift */; };
+		8C058EC41E2FCEAA001B36A4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C058EC31E2FCEAA001B36A4 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		04F6B4911E2AAEE500406AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F6B4AA1E2ABA8700406AAD /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		04F6B4AE1E2EF33B00406AAD /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		8C058EBF1E2FC432001B36A4 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		8C058EC11E2FCCFD001B36A4 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		8C058EC31E2FCEAA001B36A4 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		04F6B4A91E2ABA6000406AAD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C058EC31E2FCEAA001B36A4 /* CustomTextField.swift */,
 				04F6B4AA1E2ABA8700406AAD /* MaterialView.swift */,
 				04F6B4AE1E2EF33B00406AAD /* ItemCell.swift */,
 			);
@@ -95,7 +98,7 @@
 		8C058EBE1E2FC40D001B36A4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8C058EBF1E2FC432001B36A4 /* ItemDetailsVC.swift */,
+				8C058EC11E2FCCFD001B36A4 /* ItemDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -172,7 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C058EC01E2FC432001B36A4 /* ItemDetailsVC.swift in Sources */,
+				8C058EC41E2FCEAA001B36A4 /* CustomTextField.swift in Sources */,
+				8C058EC21E2FCCFD001B36A4 /* ItemDetailsVC.swift in Sources */,
 				04F6B4AF1E2EF33B00406AAD /* ItemCell.swift in Sources */,
 				04F6B4851E2AAEE500406AAD /* MainVC.swift in Sources */,
 				04F6B4AB1E2ABA8700406AAD /* MaterialView.swift in Sources */,
