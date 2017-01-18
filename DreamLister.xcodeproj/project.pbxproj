@@ -60,6 +60,7 @@
 		04F6B4811E2AAEE500406AAD /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				8C058EBB1E2FB29B001B36A4 /* Model */,
 				04F6B4A91E2ABA6000406AAD /* View */,
 				04F6B4821E2AAEE500406AAD /* AppDelegate.swift */,
 				04F6B4841E2AAEE500406AAD /* MainVC.swift */,
@@ -79,6 +80,13 @@
 				04F6B4AE1E2EF33B00406AAD /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		8C058EBB1E2FB29B001B36A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
