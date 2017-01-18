@@ -63,7 +63,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        <#code#>
+        
     }
     
     func getStores(){
@@ -75,4 +75,26 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             
         }
     }
+    
+    @IBAction func savePressed(_ sender: UIButton) {
+        let item = Item(context: context)
+        
+        if let title = titleField.text{
+            item.title = title
+        }
+        
+        if let price = priceField.text{
+            item.price = Double(price)!
+        }
+        if let details = detailsField.text{
+            item.details = details
+        }
+        
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        
+        ad.saveContext()
+        
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
 }

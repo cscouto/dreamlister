@@ -226,6 +226,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" red="0.65044794724244914" green="1" blue="0.67437058586490028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="btv-ee-MhK" eventType="touchUpInside" id="slX-xP-z9T"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bif-Fg-li1">
                                 <rect key="frame" x="140.5" y="354" width="94" height="21"/>
