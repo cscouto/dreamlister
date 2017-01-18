@@ -17,7 +17,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var detailsField: CustomTextField!
     
     var stores = [Store]()
-    
+    var itemToEdit: Item?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,10 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         ad.saveContext()
         
         getStores()
+        
+        if itemToEdit != nil {
+            loadItemData()
+        }
         
     }
     
@@ -77,7 +81,13 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
-        let item = Item(context: context)
+        var item: Item!
+        
+        if itemToEdit == nil {
+            item = Item(context: context)
+        } else {
+            item = itemToEdit
+        }
         
         if let title = titleField.text{
             item.title = title
@@ -90,11 +100,30 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             item.details = details
         }
         
+        item.created = NSDate()
+        
         item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
         
         ad.saveContext()
         
         _ = navigationController?.popViewController(animated: true)
+    }
+    
+    func loadItemData(){
+        if let item = itemToEdit{
+            titleField.text = item.title
+            priceField.text = "\(item.price)"
+            detailsField.text = item.details
+            
+            if let store = item.toStore{
+                for var s in stores{
+                    if (s.name == store.name) {
+                        storePicker.selectRow(stores.index(of: s)!, inComponent: 0, animated: false)
+                        break
+                    }
+                }
+            }
+        }
     }
     
 }
